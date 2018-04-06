@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.bridgestone.eclaim.bidgestone.Activity.DealerOTPActivity">
+
+<include layout="@layout/toolbar"/>
+
+           <RelativeLayout
+               android:gravity="center"
+               android:id="@+id/relative"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+
+               <LinearLayout
+                   android:id="@+id/l"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="20dp"
+                   android:background="@drawable/edittext_shadow"
+                   android:orientation="vertical"
+                   android:weightSum="1">
+
+
+
+                   <EditText
+                       android:id="@+id/otp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="0.4"
+                       android:background="@android:color/transparent"
+                       android:dropDownWidth="match_parent"
+                       android:hint="Enter OTP"
+                       android:inputType="text"
+                       android:padding="10dp">
+
+                   </EditText>
+
+
+
+               </LinearLayout>
+
+
+
+
+               <LinearLayout
+                   android:layout_below="@+id/l"
+android:id="@+id/l2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:orientation="vertical"
+                   android:weightSum="1">
+
+               <Button
+                   android:layout_gravity="center"
+                   android:id="@+id/next"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:layout_width="200dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.5"
+                   android:background="@drawable/radius_button_normal"
+                   android:dropDownWidth="match_parent"
+                   android:padding="10dp"
+                   android:text="Next"
+
+                   android:textColor="@color/white">
+
+               </Button>
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:id="@+id/l1"
+android:layout_below="@+id/l2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="20dp"
+                   android:orientation="vertical"
+                   android:weightSum="1">
+
+                   <TextView
+                       android:textColor="@color/black"
+                       android:padding="10dp"
+                       android:gravity="center"
+                       android:text="Resend OTP"
+
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+
+
+
+
+
+
+           </RelativeLayout>
+</RelativeLayout>

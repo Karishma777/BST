@@ -1,0 +1,1569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.bridgestone.eclaim.bidgestone.Activity.EngVehicalRegStepThree">
+
+    <include layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lable"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/cb_grey"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Vehicle Details"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Step 3 of 5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:id="@+id/image"
+                android:weightSum="9"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lable"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/one_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/item_devider"/>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/two_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/item_devider"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/three_filled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/item_devider"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/four_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/item_devider" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/five_grey" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:background="@drawable/edittext_shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Registration Number"
+                        android:textSize="15sp" />
+                    <include layout="@layout/item_devider1"/>
+
+
+
+                    <AutoCompleteTextView
+
+                        android:id="@+id/v_reg_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Registration Number"
+                        android:inputType="number"
+                        android:padding="10dp">
+
+                    </AutoCompleteTextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Odometer (KM) Reading (Mounted)"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+
+                    <EditText
+                        android:id="@+id/odm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Odometer (KM) Reading (Mounted)"
+                        android:inputType="number"
+                        android:padding="10dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Odometer (KM) Reading (Damaged)"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+
+
+                    <EditText
+                        android:editable="false"
+                        android:cursorVisible="false"
+                        android:id="@+id/odd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Odometer (KM) Reading (Damaged)"
+                        android:inputType="number"
+                        android:padding="10dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Vehical Make"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+
+                    <AutoCompleteTextView
+
+                        android:id="@+id/vehical_make"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Vehical Make"
+                        android:inputType="text"
+                        android:padding="10dp">
+
+                    </AutoCompleteTextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Model Name"
+                        android:textSize="15sp" />
+                    <include layout="@layout/item_devider1"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/model_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Model Name"
+                        android:inputType="text"
+                        android:padding="10dp">
+
+                    </AutoCompleteTextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Tyre Type"
+                        android:textSize="15sp" />
+                    <include layout="@layout/item_devider1"/>
+
+                    <Spinner
+                        android:id="@+id/tyer_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Tyre Type"
+                        android:inputType="text"
+                       >
+
+                    </Spinner>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="OE/REP"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+
+                    <Spinner
+                        android:id="@+id/oe_rep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="OE/REP"
+                        android:inputType="text"
+                    >
+
+                    </Spinner>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Date Of Selling Tyre"
+                        android:textSize="15sp" />
+
+
+                    <LinearLayout
+                        android:background="@drawable/edittext_shadow"
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:id="@+id/day"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:dropDownWidth="match_parent"
+                            android:hint="Day"
+                            android:inputType="number">
+
+                        </Spinner>
+                        <include layout="@layout/item_devider1"/>
+
+                        <Spinner
+                            android:gravity="center"
+
+                            android:id="@+id/month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:dropDownWidth="match_parent"
+                            android:hint="Month"
+                            android:inputType="text"
+                            >
+
+                        </Spinner>
+                        <include layout="@layout/item_devider1"/>
+
+                        <Spinner
+
+                            android:id="@+id/year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:dropDownWidth="match_parent"
+                            android:hint="Year"
+                            android:inputType="number"
+                            >
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Tyre Brand"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+
+                    <Spinner
+                        android:id="@+id/tyer_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Tyre Brand"
+                        android:inputType="text"
+                    >
+
+                    </Spinner>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Tyre Size"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+
+                    <AutoCompleteTextView
+                        android:padding="10dp"
+
+                        android:id="@+id/tyer_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Tyre Size"
+                        android:inputType="text"
+                      >
+
+                    </AutoCompleteTextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Pattern"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+
+                    <AutoCompleteTextView
+                        android:padding="10dp"
+
+                        android:id="@+id/pattern"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Pattern"
+                        >
+
+                    </AutoCompleteTextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Speed Symbol"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+                    <Spinner
+                        android:id="@+id/speed_symbol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Speed Symbol">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Dot Serial"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+                    <AutoCompleteTextView
+                        android:padding="10dp"
+
+                        android:id="@+id/dot_serial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Dot Serial"
+                        >
+
+                    </AutoCompleteTextView>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="OTD[mm]"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+                    <EditText
+                        android:id="@+id/otd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="OTD[mm]"
+                        android:inputType="text"
+                        android:padding="10dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="RTD[mm]"
+                        android:textSize="15sp" />
+
+
+                    <LinearLayout
+                        android:background="@drawable/edittext_shadow"
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:padding="8dp"
+                            android:id="@+id/g1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Groove 1"
+                            android:inputType="number">
+
+                        </EditText>
+                        <include layout="@layout/item_devider1"/>
+
+                        <EditText
+                            android:padding="8dp"
+
+
+                            android:id="@+id/g2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Groove 2"
+                            android:inputType="number"
+                            >
+
+                        </EditText>
+                        <include layout="@layout/item_devider1"/>
+
+                        <EditText
+                            android:padding="8dp"
+
+
+                            android:id="@+id/g3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Groove 3"
+                            android:inputType="number"
+                            >
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_shadow"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:padding="8dp"
+
+
+                            android:id="@+id/g4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Groove 4"
+                            android:inputType="number"
+                            >
+
+                        </EditText>
+                        <include layout="@layout/item_devider1"/>
+
+                        <EditText
+                            android:padding="8dp"
+
+
+                            android:id="@+id/g5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Groove 5"
+                            android:inputType="number"
+                            >
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="MC / TUBE / FLAP SERIAL"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+                    <EditText
+                        android:padding="8dp"
+                        android:id="@+id/tube"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="MC / TUBE / FLAP SERIAL"
+                        >
+
+                    </EditText>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:textColor="@color/black"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Tyre Running Serial"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1"/>
+
+
+                    <EditText
+                        android:padding="10dp"
+
+                        android:id="@+id/type_running_serial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Type Running Serial"
+                       >
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Tyre Position"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioposition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/spare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="15dp"
+                            android:text="Spare"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/running"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="15dp"
+                            android:text="Running"
+                            android:textSize="15sp" />
+
+                    </RadioGroup>
+
+
+                    <ListView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"></ListView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/tyer_postion_details"
+                    android:background="@drawable/edittext_shadow"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/axile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edittext_shadow"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:padding="10dp"
+                            android:text="Axile"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <include layout="@layout/item_devider1" />
+
+
+                        <Spinner
+                            android:id="@+id/Axile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:background="@android:color/transparent"
+                            android:dropDownWidth="match_parent"
+                            android:hint="Tyre Position" />
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edittext_shadow"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:padding="10dp"
+                            android:text="Tyer Position"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <include layout="@layout/item_devider1" />
+
+
+                        <Spinner
+                            android:id="@+id/tyer_postion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:background="@android:color/transparent"
+                            android:dropDownWidth="match_parent"
+                            android:hint="Tyre Position" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/In__out"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edittext_shadow"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:padding="10dp"
+                            android:text="IN/OUT"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <include layout="@layout/item_devider1" />
+
+
+                        <Spinner
+                            android:id="@+id/inout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:background="@android:color/transparent"
+                            android:dropDownWidth="match_parent"
+                            android:hint="Tyre Position" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/edittext_shadow_second"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:padding="10dp"
+                        android:text="Back" />
+
+
+                    <Button
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/next"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/radius_button_normal"
+                        android:dropDownWidth="match_parent"
+                        android:padding="10dp"
+                        android:text="Next"
+
+                        android:textColor="@color/white">
+
+                    </Button>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+    <!--
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/linear"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/vehical_registration_number"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:ems="10"
+                                    android:hint="Vehical Registration Number"
+                                    android:inputType="number"
+                                    android:text="">
+
+                                </AutoCompleteTextView>
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/vehical_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:ems="10"
+                                    android:hint="Vehical Name"
+                                    android:inputType="text"
+                                    android:text="" />
+
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/autoCompleteTextView1"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:ems="10"
+                                    android:hint="Odometer (KM) Reading (Mounted)"
+                                    android:inputType="text"
+                                    android:text="" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/odometer_damaged"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:ems="10"
+
+                                    android:hint="Odometer (KM) Reading (Damaged)"
+                                    android:inputType="text"
+                                    android:text="" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+
+                                    >
+
+                                    <EditText
+                                        android:id="@+id/vehical_make"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+
+                                        android:layout_weight="0.5"
+                                        android:ems="10"
+                                        android:hint="Vehical Make"
+                                        android:inputType="text"
+                                        android:text="">
+
+                                    </EditText>
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5">
+
+                                    <EditText
+                                        android:id="@+id/model_name"
+
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_below="@+id/textView"
+                                        android:ems="10"
+                                        android:hint="Model Name"
+                                        android:inputType="text"
+                                        android:text="">
+
+                                    </EditText>
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/tyer_type"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:ems="10"
+                                        android:hint="Tyre Type"
+                                        android:inputType="text"
+                                        android:text="">
+
+                                    </AutoCompleteTextView>
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/oe_rep"
+
+                                        android:layout_width="match_parent"
+
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_weight="0.5"
+                                        android:ems="10"
+                                        android:hint="OE/REP"
+                                        android:inputType="text"
+                                        android:text="">
+
+                                    </AutoCompleteTextView>
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/tyer_brand"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_below="@+id/textView"
+                                        android:layout_weight="0.5"
+                                        android:ems="10"
+                                        android:hint="Tyre Brand"
+                                        android:inputType="text"
+                                        android:text="">
+
+                                    </AutoCompleteTextView>
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5">
+
+                                    <EditText
+                                        android:id="@+id/tyer_size"
+
+                                        android:layout_width="match_parent"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_below="@+id/textView"
+
+                                        android:layout_weight="0.5"
+                                        android:hint="Tyre Size"
+
+                                        android:inputType="number"
+                                        android:text="">
+
+                                    </EditText>
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5">
+
+                                    <EditText
+                                        android:id="@+id/otd"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_weight="0.5"
+
+                                        android:ems="10"
+                                        android:hint="OTD [mm]"
+                                        android:inputType="number"
+                                        android:text="">
+
+                                    </EditText>
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5">
+
+                                    <EditText
+                                        android:id="@+id/rtd"
+
+                                        android:layout_width="match_parent"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_below="@+id/textView"
+                                        android:layout_weight="0.5"
+                                        android:ems="10"
+                                        android:hint="RTD [mm]"
+                                        android:inputType="number"
+                                        android:text="">
+
+                                    </EditText>
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/day"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="1"
+
+                                        android:hint="Day"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="number" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/month"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="1"
+
+                                        android:hint="Month"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="text" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/year"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ems="1"
+
+                                        android:hint="Year"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="number" />
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/speed_symbol"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+                                    android:layout_below="@+id/textView"
+                                    android:ems="10"
+                                    android:hint="Speed Symbol"
+                                    android:inputType="text"
+                                    android:text="">
+
+                                </AutoCompleteTextView>
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5">
+
+                                <EditText
+                                    android:id="@+id/pattern"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+                                    android:layout_below="@+id/textView"
+                                    android:ems="10"
+                                    android:hint="Pattern"
+                                    android:inputType="text"
+                                    android:text="">
+
+                                </EditText>
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/dot_serial"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+                                    android:layout_below="@+id/textView"
+                                    android:ems="10"
+
+                                    android:hint="Dot Serial"
+                                    android:inputType="number"
+                                    android:text="">
+
+                                </EditText>
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/type_running_serial"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+
+                                    android:layout_below="@+id/textView"
+                                    android:ems="10"
+
+                                    android:hint="Type Running Serial"
+                                    android:inputType="number"
+                                    android:text="" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/tyer_postion"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+
+                                    android:layout_marginBottom="20dp"
+                                    android:ems="10"
+
+                                    android:hint="Tyre Position"
+                                    android:inputType="text"
+                                    android:text="">
+
+                                </EditText>
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:src="@drawable/farrow"
+            app:backgroundTint="@color/colorPrimary" />
+    -->
+
+</RelativeLayout>
+

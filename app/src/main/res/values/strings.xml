@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BridgeStone</string>
+    <!--FontAwsome Icon-->
+    <string name="menu_icon">&#xf0c9;</string>
+    <string name="search">&#xf002;</string>
+    <string name="male">&#xf183;</string>
+    <string name="female">&#xf182;</string>
+    <string name="child">&#xf1ae;</string>
+    <string name="sports">&#xf1e3;</string>
+    <string name="angle_right">&#xf105;</string>
+    <string name="clock">&#xf017;</string>
+    <string name="gallery">&#xf03e;</string>
+    <string name="back_arrow">&#xf0a8;</string>
+    <string name="like">&#xf004;</string>
+    <string name="watch">&#xf017;</string>
+    <string name="location">&#xf041;</string>
+    <string name="send">&#xf1d8;</string>
+    <string name="working">&#xf0b1;</string>
+    <string name="reg_number">&#xf25d;</string>
+
+    <string name="title_activity_custom_view_icon_text_tabs">Custom View Icon &amp; Text</string>
+    <string name="font_fontFamily_medium">sans-serif</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_otp">OTPActivity</string>
+
+
+</resources>
+

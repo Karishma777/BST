@@ -1,0 +1,382 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.bridgestone.eclaim.bidgestone.Fragment.TwoFragment">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/linear"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <AutoCompleteTextView
+                                android:id="@+id/vehical_registration_number"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView"
+                                android:background="@drawable/edittext_shadow"
+                                android:ems="10"
+                                android:hint="Vehical Registration Number"
+                                android:text=""
+                                >
+
+                            </AutoCompleteTextView>
+
+
+                            <EditText
+                                android:id="@+id/vehical_name"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_shadow"
+                                android:ems="10"
+                                android:hint="Vehical Name"
+                                android:text=""
+                                >
+
+                            </EditText>
+
+
+                            <EditText
+                                android:id="@+id/autoCompleteTextView1"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_shadow"
+                                android:ems="10"
+                                android:hint="Odometer (KM) Reading (Mounted)"
+                                android:text=""
+                                >
+
+                            </EditText>
+
+
+                            <EditText
+                                android:id="@+id/odometer_damaged"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_shadow"
+                                android:ems="10"
+                                android:hint="Odometer (KM) Reading (Damaged)"
+                                android:text=""
+                                >
+
+                            </EditText>
+
+                            <LinearLayout
+                                android:weightSum="1"
+                                android:layout_marginTop="10dp"
+
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_weight="0.5"
+                                    android:id="@+id/vehical_make"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:background="@drawable/edittext_shadow"
+                                    android:ems="10"
+                                    android:hint="Vehical Make"
+                                    android:text=""
+                                    >
+
+                                </EditText>
+
+
+                                <EditText
+                                    android:layout_weight="0.5"
+
+                                    android:id="@+id/model_name"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:background="@drawable/edittext_shadow"
+                                    android:ems="10"
+                                    android:hint="Model Name"
+                                    android:text=""
+                                    >
+
+                                </EditText>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:weightSum="1"
+                                android:layout_marginTop="10dp"
+
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_weight="0.5"
+                                    android:id="@+id/autoCompleteTextView2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:background="@drawable/edittext_shadow"
+                                    android:ems="10"
+                                    android:hint="Tyer Type"
+                                    android:text=""
+                                    >
+
+                                </EditText>
+
+
+                                <EditText
+                                    android:layout_weight="0.5"
+
+
+                                    android:id="@+id/autoCompleteTextView3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:background="@drawable/edittext_shadow"
+                                    android:ems="10"
+                                    android:hint="OE/REP"
+                                    android:text=""
+                                    >
+
+                                </EditText>
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:weightSum="1"
+                                android:layout_marginTop="10dp"
+
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_weight="0.5"
+                                    android:id="@+id/tyer_brand"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:background="@drawable/edittext_shadow"
+                                    android:ems="10"
+                                    android:hint="Tyer Brand"
+                                    android:text=""
+                                    >
+
+                                </EditText>
+
+
+                                <EditText
+                                    android:layout_weight="0.5"
+
+                                    android:id="@+id/tyer_size"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:background="@drawable/edittext_shadow"
+                                    android:ems="10"
+                                    android:hint="Tyer Size"
+                                    android:text=""
+                                    >
+
+                                </EditText>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:weightSum="1"
+                                android:layout_marginTop="10dp"
+
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_weight="0.5"
+                                    android:id="@+id/otd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentLeft="true"
+                                    android:background="@drawable/edittext_shadow"
+                                    android:ems="10"
+                                    android:hint="OTD [mm]"
+                                    android:text=""
+                                    >
+
+                                </EditText>
+
+
+                                <EditText
+                                    android:layout_weight="0.5"
+
+                                    android:id="@+id/rtd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/textView"
+                                    android:background="@drawable/edittext_shadow"
+                                    android:ems="10"
+                                    android:hint="RTD [mm]"
+                                    android:text=""
+                                    >
+
+                                </EditText>
+                            </LinearLayout>
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_shadow"
+                                android:ems="1"
+                                android:hint="Date Of Tyer Sale"
+                                android:imeOptions="actionNext" />
+
+                            <EditText
+                                android:id="@+id/pattern"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_shadow"
+                                android:ems="10"
+                                android:hint="Pattern"
+                                android:text=""
+                                >
+
+                            </EditText>
+
+
+                            <EditText
+                                android:id="@+id/dot_serial"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_shadow"
+                                android:ems="10"
+                                android:hint="Dot Serial"
+                                android:text=""
+                                >
+
+                            </EditText>
+
+                            <AutoCompleteTextView
+                                android:id="@+id/type_running_serial"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_shadow"
+                                android:ems="10"
+                                android:hint="Type Running Serial"
+                                android:text=""
+                                />
+
+
+                            <EditText
+                                android:id="@+id/tyer_postion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edittext_shadow"
+                                android:ems="10"
+                                android:hint="Tyer Position"
+                                android:text=""
+                                >
+
+                            </EditText>
+
+                            <Button
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="50dp"
+
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:text="Next"
+                                android:drawableRight="@drawable/farrow"
+                                android:background="@drawable/radius_button_normal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+
+</RelativeLayout>

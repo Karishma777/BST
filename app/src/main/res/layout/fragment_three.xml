@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.bridgestone.eclaim.bidgestone.Fragment.ThreeFragment">
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <EditText
+                                android:background="@drawable/edittext_shadow"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:ems="1"
+                                android:hint="Customer Complaint"
+                                android:imeOptions="actionNext" />
+
+
+                            <AutoCompleteTextView
+                                android:background="@drawable/edittext_shadow"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/damage"
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView"
+                                android:ems="10"
+                                android:hint="Damage"
+                                android:imeOptions="actionNext"
+                                android:text="">
+
+                            </AutoCompleteTextView>
+
+
+                            <EditText
+                                android:background="@drawable/edittext_shadow"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:ems="1"
+                                android:hint="Damage Details"
+                                android:imeOptions="actionNext" />
+
+
+
+
+                            <EditText
+                                android:background="@drawable/edittext_shadow"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:ems="1"
+                                android:hint="Judgement"
+                                android:imeOptions="actionNext" />
+
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text="(If complaint is SIDE CUT PENETRATION or clealy rejected reason, Accept can't be selected.)" />
+
+
+                            <EditText
+                                android:background="@drawable/edittext_shadow"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:ems="1"
+                                android:hint="Wear Ratio"
+                                android:imeOptions="actionNext" />
+
+
+                            <EditText
+                                android:background="@drawable/edittext_shadow"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:ems="1"
+                                android:hint="Judgement Ratio"
+                                android:imeOptions="actionNext" />
+
+
+                            <EditText
+                                android:background="@drawable/edittext_shadow"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:ems="1"
+                                android:hint="Tyre Cost"
+                                android:imeOptions="actionNext" />
+
+
+                            <EditText
+                                android:background="@drawable/edittext_shadow"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:ems="1"
+                                android:hint="Reference Of Adjustment Cost"
+                                android:imeOptions="actionNext" />
+
+
+                            <AutoCompleteTextView
+                                android:background="@drawable/edittext_shadow"
+                                android:layout_marginTop="10dp"
+
+
+                                android:id="@+id/cost"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/textView"
+                                android:ems="10"
+                                android:hint="Estimated Root Cost"
+                                android:text="">
+
+                            </AutoCompleteTextView>
+                            <Button
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="40dp"
+
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:text="Next"
+                                android:drawableRight="@drawable/farrow"
+                                android:background="@drawable/radius_button_normal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+</RelativeLayout>

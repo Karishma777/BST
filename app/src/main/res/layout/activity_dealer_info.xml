@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="in.bridgestone.eclaim.bidgestone.Activity.DealerInfoActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="@drawable/edittext_shadow"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/l8"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Entity No:"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:padding="10dp"
+                        android:background="@android:color/transparent"
+
+                        android:id="@+id/entity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/textView"
+                        android:ems="10"
+                        android:text="">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@id/l8"
+                    android:id="@+id/l1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Name:"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:padding="10dp"
+                        android:background="@android:color/transparent"
+
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/textView"
+                        android:ems="10"
+                        android:text="">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_below="@+id/l1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Contact:"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/contact"
+                        android:padding="10dp"
+                        android:background="@android:color/transparent"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/textView"
+                        android:ems="10"
+                        android:text="">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l3"
+                    android:layout_below="@+id/l2"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Email:"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:padding="10dp"
+                        android:background="@android:color/transparent"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/textView"
+                        android:ems="10"
+                        android:text="">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_below="@+id/l3"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Address:"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:padding="10dp"
+                        android:background="@android:color/transparent"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/textView"
+                        android:ems="10"
+                        android:text="">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/fab"
+        app:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:src="@drawable/farrow" />
+
+</RelativeLayout>

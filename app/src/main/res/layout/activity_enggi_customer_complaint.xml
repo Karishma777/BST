@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.bridgestone.eclaim.bidgestone.Activity.EngineerCustomerComplaint">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lable"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/cb_grey"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Complaint Details"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Step 4 of 5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/lable"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/one_grey" />
+
+                <include layout="@layout/item_devider" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/two_grey" />
+
+                <include layout="@layout/item_devider" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/three_grey" />
+
+                <include layout="@layout/item_devider" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/four_filled" />
+                <include layout="@layout/item_devider" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/five_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:background="@drawable/edittext_shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Customer Complaint"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <include layout="@layout/item_devider1" />
+
+
+                    <EditText
+                        android:id="@+id/c_complaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Customer Complaint"
+                        android:inputType="text"
+                        android:padding="10dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Damage"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1" />
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/damage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Damage"
+                        android:inputType="text"
+                        android:padding="10dp">
+
+                    </AutoCompleteTextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Damage Details"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1" />
+
+
+                    <EditText
+                        android:id="@+id/damage_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Damage Details"
+                        android:inputType="text"
+                        android:padding="10dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Judgement"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1" />
+
+
+                    <Spinner
+                        android:id="@+id/judgement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Judgement"
+                        android:inputType="text"
+                        android:padding="10dp">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Reason Of Acceptance"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1" />
+
+
+                    <EditText
+                        android:id="@+id/reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Reason Of Acceptance"
+                        android:inputType="text"
+                        android:padding="10dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Wear Ratio"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1" />
+
+
+                    <EditText
+                        android:editable="false"
+                        android:cursorVisible="false"
+                        android:id="@+id/wear_ration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Wear Ratio"
+                        android:inputType="number"
+                        android:padding="10dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Adjustment Ratio"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1" />
+
+
+
+                    <LinearLayout
+                        android:layout_weight="0.4"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+
+                            android:id="@+id/Adjustment_ratio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:background="@android:color/transparent"
+                            android:dropDownWidth="match_parent"
+                            android:hint="Ratio"
+                            android:inputType="number"
+                            android:padding="10dp">
+                        </EditText>
+
+                        <TextView
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:padding="10dp"
+                            android:text="%"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Tyre Cost"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1" />
+
+
+                    <EditText
+                        android:id="@+id/tyer_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Tyre Cost"
+                        android:inputType="number"
+                        android:padding="10dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Reference Of Adjustment Cost"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1" />
+
+
+                    <EditText
+                        android:editable="false"
+                        android:cursorVisible="false"
+                        android:id="@+id/referce_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Reference Of Adjustment Cost"
+                        android:inputType="number"
+                        android:padding="10dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:padding="10dp"
+                        android:text="Estimated Root Cause"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <include layout="@layout/item_devider1" />
+
+                    <AutoCompleteTextView
+                        android:editable="false"
+                        android:cursorVisible="false"
+                        android:id="@+id/esitimated_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@android:color/transparent"
+                        android:dropDownWidth="match_parent"
+                        android:hint="Estimated Root Cause"
+                        android:inputType="number"
+                        android:padding="10dp">
+
+                    </AutoCompleteTextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/edittext_shadow_second"
+                        android:padding="10dp"
+                        android:text="Back" />
+
+
+                    <Button
+                        android:id="@+id/next"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/radius_button_normal"
+                        android:dropDownWidth="match_parent"
+                        android:padding="10dp"
+                        android:text="Next"
+
+                        android:textColor="@color/white">
+
+                    </Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <!--  <RelativeLayout
+          android:id="@+id/relative"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="20dp"
+                  android:gravity="center"
+                  android:orientation="vertical">
+
+                  <android.support.v7.widget.CardView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      app:cardCornerRadius="4dp">
+
+
+                      <LinearLayout
+                          android:id="@+id/linear"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="10dp"
+                          android:gravity="center"
+                          android:orientation="vertical">
+
+                          <android.support.design.widget.TextInputLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <EditText
+                                  android:layout_width="match_parent"
+
+                                  android:layout_height="wrap_content"
+
+                                  android:ems="1"
+                                  android:hint="Customer Complaint"
+                                  android:imeOptions="actionNext"
+                                  android:inputType="text" />
+                          </android.support.design.widget.TextInputLayout>
+
+                          <android.support.design.widget.TextInputLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <AutoCompleteTextView
+                                  android:id="@+id/damage"
+                                  android:layout_width="match_parent"
+
+
+                                  android:layout_height="wrap_content"
+                                  android:layout_alignParentLeft="true"
+                                  android:layout_below="@+id/textView"
+                                  android:ems="10"
+                                  android:hint="Damage"
+                                  android:imeOptions="actionNext"
+                                  android:inputType="text"
+                                  android:text="">
+
+                              </AutoCompleteTextView>
+                          </android.support.design.widget.TextInputLayout>
+
+                          <android.support.design.widget.TextInputLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <EditText
+                                  android:layout_width="match_parent"
+
+
+                                  android:layout_height="wrap_content"
+
+                                  android:ems="1"
+                                  android:hint="Damage Details"
+                                  android:imeOptions="actionNext"
+                                  android:inputType="text" />
+
+                          </android.support.design.widget.TextInputLayout>
+
+                          <android.support.design.widget.TextInputLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+
+                              <EditText
+                                  android:layout_width="match_parent"
+
+                                  android:layout_height="wrap_content"
+
+                                  android:ems="1"
+                                  android:hint="Judgement"
+                                  android:imeOptions="actionNext"
+                                  android:inputType="text" />
+                          </android.support.design.widget.TextInputLayout>
+
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="5dp"
+                              android:layout_marginTop="15dp"
+                              android:text="(If complaint is SIDE CUT PENETRATION or clealy rejected reason, Accept can't be selected.)" />
+
+                          <android.support.design.widget.TextInputLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+
+                              <EditText
+                                  android:layout_width="match_parent"
+
+
+                                  android:layout_height="wrap_content"
+
+                                  android:ems="1"
+                                  android:hint="Wear Ratio"
+                                  android:imeOptions="actionNext"
+                                  android:inputType="number" />
+
+                          </android.support.design.widget.TextInputLayout>
+
+                          <android.support.design.widget.TextInputLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <EditText
+                                  android:layout_width="match_parent"
+
+
+                                  android:layout_height="wrap_content"
+
+                                  android:ems="1"
+                                  android:hint="Judgement Ratio"
+                                  android:imeOptions="actionNext"
+                                  android:inputType="number" />
+                          </android.support.design.widget.TextInputLayout>
+
+                          <android.support.design.widget.TextInputLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <EditText
+                                  android:layout_width="match_parent"
+
+                                  android:layout_height="wrap_content"
+
+                                  android:ems="1"
+                                  android:hint="Tyre Cost"
+                                  android:imeOptions="actionNext"
+                                  android:inputType="number" />
+                          </android.support.design.widget.TextInputLayout>
+
+                          <android.support.design.widget.TextInputLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+
+                              <EditText
+                                  android:layout_width="match_parent"
+
+                                  android:layout_height="wrap_content"
+
+                                  android:ems="1"
+                                  android:hint="Reference Of Adjustment Cost"
+                                  android:imeOptions="actionNext"
+                                  android:inputType="number" />
+
+                          </android.support.design.widget.TextInputLayout>
+
+                          <android.support.design.widget.TextInputLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+
+                              <AutoCompleteTextView
+
+                                  android:id="@+id/cost"
+
+
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_alignParentLeft="true"
+                                  android:layout_below="@+id/textView"
+                                  android:ems="10"
+                                  android:hint="Estimated Root Cost"
+                                  android:inputType="number"
+                                  android:text="">
+
+                              </AutoCompleteTextView>
+                          </android.support.design.widget.TextInputLayout>
+                      </LinearLayout>
+                  </android.support.v7.widget.CardView>
+
+              </LinearLayout>
+          </ScrollView>
+      </RelativeLayout>
+
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/fab"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_gravity="bottom|end"
+          android:layout_margin="10dp"
+          android:src="@drawable/farrow"
+          app:backgroundTint="@color/colorPrimary" />-->
+</RelativeLayout>
